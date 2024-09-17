@@ -1,0 +1,42 @@
+body {
+    font-family: "Crimson Text", serif;
+    background-color: powderblue;
+}
+
+form {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 10vh 40vw 10vh 40vw;
+    padding: 1em;
+    background-color: aliceblue;
+    border-radius: 2.5em;
+    color: darkslategrey;
+}
+
+.nomeCompleto input {
+    border: 2px solid lightslategray;
+    border-radius: 1em;
+
+}
+
+.idade input {
+    border: 2px solid lightslategray;
+    border-radius: 1em;
+}
+
+.email input {
+    border: 2px solid lightslategray;
+    border-radius: 1em;
+}
+
+input[type=submit] {
+    border-radius: 1em;
+    border: 2px solid lightslategray;
+    color: darkslategray;
+    margin: 0.2cm;
+}
+
+input[type=radio]{
+    border: 2px solid black;
+}
