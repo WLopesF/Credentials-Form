@@ -20,159 +20,70 @@
     <section class="form">
         <form>
 
-            <h1>Cadastro de Interesse</h1>
+            <h1>Cadastro de Interesse</h>
 
-            <div class="nomeCompleto">
+<form action="/submit" method="POST">
+    <label for="full_name"><b>Nome completo</b></label>
+    <br>
+    <input type="text" name="full_name">
+    <br><br>
 
-                <label for=><b>Nome completo</b></label>
-                <br>
-                <input type="text">
-                <br>
-                <br>
+    <label for="age"><b>Anos de idade</b></label>
+    <br>
+    <input type="text" name="age">
+    <br><br>
 
-            </div>
+    <label for="email"><b>Email</b></label>
+    <br>
+    <input type="email" name="email">
+    <br><br>
 
-            <div class="idade">
+    <label><b>Concluiu o ensino fundamental?</b></label>
+    <br>
+    <input type="radio" name="fundamental_completed" value="Sim"> Sim
+    <input type="radio" name="fundamental_completed" value="Não"> Não
+    <br><br>
 
-                <label for=><b>Anos de idade</b></label>
-                <br>
-                <input type="text">
-                <br>
-                <br>
-            </div>
+    <label><b>Concluiu o ensino médio?</b></label>
+    <br>
+    <input type="radio" name="high_school_completed" value="Sim"> Sim
+    <input type="radio" name="high_school_completed" value="Não"> Não
+    <br><br>
 
-            <div class="email">
+    <label><b>Qual sua cor de pele?</b></label>
+    <br>
+    <input type="radio" name="skin_color" value="Branco"> Branco
+    <input type="radio" name="skin_color" value="Pardo"> Pardo
+    <input type="radio" name="skin_color" value="Indígena"> Indígena
+    <input type="radio" name="skin_color" value="Negro"> Negro
+    <br><br>
 
-                <label for=><b>Email</b></label>
-                <br>
-                <input type="email">
+    <label><b>Com qual gênero você se identifica?</b></label>
+    <br>
+    <input type="radio" name="gender" value="Homem cisgênero"> Homem cisgênero
+    <input type="radio" name="gender" value="Homem transgênero"> Homem transgênero
+    <input type="radio" name="gender" value="Mulher cisgênero"> Mulher cisgênero
+    <input type="radio" name="gender" value="Mulher transgênero"> Mulher transgênero
+    <br><br>
 
+    <label><b>Qual curso deseja fazer para o 1º bimestre?</b></label>
+    <br>
+    <input type="radio" name="preferred_course" value="Farmacologia"> Farmacologia
+    <input type="radio" name="preferred_course" value="Programação em JavaScript"> Programação em JavaScript
+    <input type="radio" name="preferred_course" value="Gestão Administrativa"> Gestão Administrativa
+    <input type="radio" name="preferred_course" value="Oratória"> Oratória
+    <br><br>
 
+    <label><b><em>Após ler e preencher o formulário, você concorda com nossos termos de uso?</em></b></label>
+    <br>
+    <input type="radio" name="terms_agreed" value="Sim"> Sim
+    <input type="radio" name="terms_agreed" value="Não"> Não
+    <br><br>
 
+    <input type="submit" value="Enviar">  
 
+</form>
 
-            </div>
-
-            <br>
-
-            <div class="escolaridade1">
-
-                <label for=><b>Concluiu o ensino fundamental?</label></b></label>
-                <br>
-                <br>
-                <input type="radio">
-                <label for=>Sim</label>
-                <br>
-                <input type="radio">
-                <label for=>Não</label>
-
-            </div>
-
-            <br>
-
-            <div class="escolaridade2">
-
-                <label for=><b>Concluiu o ensino médio?</b></label>
-                <br>
-                <br>
-                <input type="radio">
-                <label for=>Sim</label>
-                <br>
-                <input type="radio">
-                <label for=>Não</label>
-
-
-
-
-            </div>
-
-            <br>
-
-            <div class="cordepele">
-
-                <label for=><b>Qual sua cor de pele?</b></label>
-                <br>
-                <br>
-                <input type="radio">
-                <label for=>Bramco</label>
-                <br>
-                <input type="radio">
-                <label for=>Pardo</label>
-                <br>
-                <input type="radio">
-                <label for=>Indígena</label>
-                <br>
-                <input type="radio">
-                <label for=>Negro</label>
-                <br>
-                <br>
-
-            </div>
-
-            <div class="genero">
-
-                <label for><b>Com qual gênero você se identifica?</b></label>
-                <br>
-                <input type="radio">
-                <label for=>Homem cisgênero</label>
-                <br>
-                <input type="radio">
-                <label for=>Homem transgênero</label>
-                <br>
-                <input type="radio">
-                <label for=>Mulher cisgênero</label>
-                <br>
-                <input type="radio">
-                <label for=>Mulher transgênero</label>
-
-            </div>
-
-            <br>
-
-            <div class="escolhaCurso">
-
-                <label for=><b>Qual curso deseja fazer para o 1º bimestre?</b></label>
-                <br>
-                <br>
-                <input type="radio">
-                <label for=>Farmacologia</label>
-                <br>
-                <input type="radio">
-                <label for=>Programação em JavaScript</label>
-                <br>
-                <input type="radio">
-                <label for=>Gestão Administrativa</label>
-                <br>
-                <input type="radio">
-                <label for=>Oratória</label>
-
-                <br>
-                <br>
-
-
-            </div>
-
-            <div class="termos">
-
-            <label for=><b><em>Após ler e preencher o formulário, você concorda com nossos termos de uso quanto a suas credenciais inseridas</em></b></label>
-            <br>
-            <input type="radio">
-            <label for=>Sim</label>
-            <br>
-            <input type="radio">
-            <label for=>Não</label>
-
-            </div>
-
-            <br>
-
-            <input type="submit">
-
-        </form>
-
-    </section>
-
-
-</body>
-
+<body/>
+    
 </html>
